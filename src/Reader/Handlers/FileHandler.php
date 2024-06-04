@@ -30,6 +30,7 @@ class FileHandler extends BaseReader implements ReaderInterface
 
         // Start $tables as the cached scaffold version
         if (($scaffold = unserialize(file_get_contents($this->libraryPath.'/Files/'.$this->cacheKey))) && isset($scaffold->tables)) {
+
             $this->tables = $scaffold->tables ?? new Mergeable();
             $this->ready  = true;
         }
@@ -60,9 +61,10 @@ class FileHandler extends BaseReader implements ReaderInterface
             $tables = [$tables];
         }
 
+
         foreach ($tables as $tableName) {
             if ($this->tables->{$tableName} === true) {
-                $this->tables->{$tableName} = unserialize(file_get_contents($this->libraryPath."\Files\\".$this->cacheKey));
+                $this->tables->{$tableName} = unserialize(file_get_contents($this->libraryPath."\Files\\".$this->cacheKey.'-'.$tableName));
             }
         }
 
