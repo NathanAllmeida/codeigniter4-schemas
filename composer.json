@@ -28,7 +28,6 @@
         "tatter/agents": "^1.2",
         "tatter/tools": "^2.0"
     },
-    "minimum-stability": "dev",
     "prefer-stable": true,
     "autoload": {
         "psr-4": {

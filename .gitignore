@@ -5,3 +5,5 @@ phpunit
 *.cache
 composer.lock
 .DS_Store
+!src/Files/
+src/Files/*

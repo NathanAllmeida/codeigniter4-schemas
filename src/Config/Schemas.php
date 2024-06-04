@@ -46,7 +46,7 @@ class Schemas extends BaseConfig
 
     // Default handlers to archive copies of the schema
     public $archiveHandlers = [
-        'Tatter\Schemas\Archiver\Handlers\CacheHandler',
+        'Tatter\Schemas\Archiver\Handlers\FileHandler',
     ];
 
     // Default time-to-live for a stored schema (e.g. Cache) in seconds
@@ -57,7 +57,7 @@ class Schemas extends BaseConfig
     //--------------------------------------------------------------------
 
     // Default handler used to return and read a schema
-    public $readHandler = 'Tatter\Schemas\Reader\Handlers\CacheHandler';
+    public $readHandler = 'Tatter\Schemas\Reader\Handlers\FileHandler';
 
     //--------------------------------------------------------------------
     // Publishing

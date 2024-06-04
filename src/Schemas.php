@@ -225,7 +225,6 @@ class Schemas
         if (empty($handler)) {
             $handler = $this->config->readHandler;
         }
-
         // Create the reader instance
         if (is_string($handler)) {
             $handler = new $handler($this->config);
