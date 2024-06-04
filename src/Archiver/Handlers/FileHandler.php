@@ -18,7 +18,7 @@ class FileHandler extends BaseArchiver implements ArchiverInterface
      * @param CacheInterface $cache  The cache handler to use, null to load a new default
      */
 
-    public $libraryPath = '../vendor/tatter/schemas/src/';
+    public $libraryPath = '../vendor/tatter/schemas/src';
     public $cacheKey = 'schemas-'.ENVIRONMENT;
     public function __construct(?SchemasConfig $config = null, $cache = null)
     {

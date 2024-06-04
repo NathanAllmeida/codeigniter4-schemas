@@ -15,7 +15,7 @@ class FileHandler extends BaseReader implements ReaderInterface
      * @var Mergeable|null
      */
     protected $tables;
-    public $libraryPath = '../vendor/tatter/schemas/src/';
+    public $libraryPath = '../vendor/tatter/schemas/src';
     public $cacheKey = 'schemas-'.ENVIRONMENT;
 
     /**
