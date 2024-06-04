@@ -64,7 +64,7 @@ class FileHandler extends BaseReader implements ReaderInterface
 
         foreach ($tables as $tableName) {
             if ($this->tables->{$tableName} === true) {
-                $this->tables->{$tableName} = unserialize(file_get_contents($this->libraryPath."\Files\\".$this->cacheKey.'-'.$tableName));
+                $this->tables->{$tableName} = unserialize(file_get_contents($this->libraryPath."/Files/".$this->cacheKey.'-'.$tableName));
             }
         }
 

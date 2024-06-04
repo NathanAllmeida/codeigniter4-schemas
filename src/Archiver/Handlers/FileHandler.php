@@ -39,12 +39,12 @@ class FileHandler extends BaseArchiver implements ArchiverInterface
         // Save each individual table
         foreach ($tables as $table) {
             $schema->tables->{$table->name} = true;
-            file_put_contents($this->libraryPath."\Files\\".$this->cacheKey. '-' . $table->name, serialize($table));
+            file_put_contents($this->libraryPath."/Files/".$this->cacheKey. '-' . $table->name, serialize($table));
         }
 
         // Save the scaffold version of the schema
 
-        file_put_contents($this->libraryPath."\Files\\".$this->cacheKey,serialize($schema));
-        return is_file($this->libraryPath."\Files\\".$this->cacheKey);
+        file_put_contents($this->libraryPath."/Files/".$this->cacheKey,serialize($schema));
+        return is_file($this->libraryPath."/Files/".$this->cacheKey);
     }
 }
