@@ -27,6 +27,7 @@ class FileHandler extends BaseReader implements ReaderInterface
     public function __construct(?SchemasConfig $config = null, $cache = null)
     {
         parent::__construct($config);
+        $this->libraryPath = realpath($this->libraryPath);
 
         // Start $tables as the cached scaffold version
         if (($scaffold = unserialize(file_get_contents($this->libraryPath.'/Files/'.$this->cacheKey))) && isset($scaffold->tables)) {

@@ -23,6 +23,7 @@ class FileHandler extends BaseArchiver implements ArchiverInterface
     public function __construct(?SchemasConfig $config = null, $cache = null)
     {
         parent::__construct($config);
+        $this->libraryPath = realpath($this->libraryPath);
     }
 
     /**
