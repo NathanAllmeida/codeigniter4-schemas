@@ -5,5 +5,5 @@ phpunit
 *.cache
 composer.lock
 .DS_Store
-!src/Files/index.html
 src/Files/*
+!src/Files/index.html
