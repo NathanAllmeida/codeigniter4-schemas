@@ -14,6 +14,8 @@ use Tatter\Schemas\Structures\Relation;
 use Tatter\Schemas\Structures\Schema;
 use Tatter\Schemas\Structures\Table;
 
+#[AllowDynamicProperties]
+
 class DatabaseHandler extends BaseDrafter implements DrafterInterface
 {
     /**
