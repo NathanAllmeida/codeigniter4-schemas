@@ -228,6 +228,10 @@ class Schemas
         // Create the reader instance
         if (is_string($handler)) {
             $handler = new $handler($this->config);
+            if(!$handler->schemaExists()){
+                $this->draft();
+                $handler = new $handler($this->config);
+            }
         }
 
         $this->errors = array_merge($this->errors, $handler->getErrors());

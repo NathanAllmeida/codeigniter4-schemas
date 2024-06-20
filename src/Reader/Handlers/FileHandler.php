@@ -29,12 +29,22 @@ class FileHandler extends BaseReader implements ReaderInterface
         parent::__construct($config);
         $this->libraryPath = realpath($this->libraryPath);
 
+
+        // If not exists schema archive
+        if(!is_file($this->libraryPath.'/Files/'.$this->cacheKey)){
+           return false;
+        }
+
         // Start $tables as the cached scaffold version
         if (($scaffold = unserialize(file_get_contents($this->libraryPath.'/Files/'.$this->cacheKey))) && isset($scaffold->tables)) {
 
             $this->tables = $scaffold->tables ?? new Mergeable();
             $this->ready  = true;
         }
+    }
+
+    public function schemaExists(){
+        return is_file($this->libraryPath.'/Files/'.$this->cacheKey);
     }
 
     /**
