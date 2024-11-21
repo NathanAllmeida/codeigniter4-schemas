@@ -4,6 +4,7 @@ namespace Tatter\Schemas\Structures;
 
 use Tatter\Schemas\Reader\ReaderInterface;
 
+#[\AllowDynamicProperties]
 class Schema extends Mergeable
 {
     /**

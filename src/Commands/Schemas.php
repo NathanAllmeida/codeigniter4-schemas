@@ -7,6 +7,7 @@ use CodeIgniter\CLI\CLI;
 use Exception;
 use Tatter\Schemas\Exceptions\SchemasException;
 
+#[\AllowDynamicProperties]
 class Schemas extends BaseCommand
 {
     protected $group       = 'Database';

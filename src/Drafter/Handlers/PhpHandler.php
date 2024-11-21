@@ -8,6 +8,7 @@ use Tatter\Schemas\Drafter\BaseDrafter;
 use Tatter\Schemas\Drafter\DrafterInterface;
 use Tatter\Schemas\Structures\Schema;
 
+#[\AllowDynamicProperties]
 class PhpHandler extends BaseDrafter implements DrafterInterface
 {
     /**

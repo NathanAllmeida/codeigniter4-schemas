@@ -4,6 +4,7 @@ namespace Tests\Support\Database\Seeds;
 
 use CodeIgniter\Database\Seeder;
 
+#[\AllowDynamicProperties]
 class TestSeeder extends Seeder
 {
     public function run()

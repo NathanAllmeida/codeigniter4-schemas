@@ -2,6 +2,7 @@
 
 namespace Tatter\Schemas\Structures;
 
+#[\AllowDynamicProperties]
 class ForeignKey extends Mergeable
 {
     /**

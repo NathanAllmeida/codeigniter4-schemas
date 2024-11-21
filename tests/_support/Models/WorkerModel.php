@@ -4,6 +4,7 @@ namespace Tests\Support\Models;
 
 use CodeIgniter\Model;
 
+#[\AllowDynamicProperties]
 class WorkerModel extends Model
 {
     protected $table          = 'workers';

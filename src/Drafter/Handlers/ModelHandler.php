@@ -12,6 +12,7 @@ use Tatter\Schemas\Structures\Field;
 use Tatter\Schemas\Structures\Schema;
 use Tatter\Schemas\Structures\Table;
 
+#[\AllowDynamicProperties]
 class ModelHandler extends BaseDrafter implements DrafterInterface
 {
     /**

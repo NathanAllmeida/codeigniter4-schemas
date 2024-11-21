@@ -6,6 +6,7 @@ use Tatter\Schemas\Archiver\ArchiverInterface;
 use Tatter\Schemas\Archiver\BaseArchiver;
 use Tatter\Schemas\Structures\Schema;
 
+#[\AllowDynamicProperties]
 class CliHandler extends BaseArchiver implements ArchiverInterface
 {
     /**

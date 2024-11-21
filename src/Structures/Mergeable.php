@@ -7,6 +7,7 @@ use Countable;
 use IteratorAggregate;
 use Traversable;
 
+#[\AllowDynamicProperties]
 class Mergeable implements Countable, IteratorAggregate
 {
     /**

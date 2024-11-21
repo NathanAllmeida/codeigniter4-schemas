@@ -2,6 +2,7 @@
 
 namespace Tatter\Schemas\Structures;
 
+#[\AllowDynamicProperties]
 class Relation extends Mergeable
 {
     /**

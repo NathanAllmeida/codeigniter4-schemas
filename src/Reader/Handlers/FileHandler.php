@@ -8,6 +8,7 @@ use Tatter\Schemas\Reader\ReaderInterface;
 use Tatter\Schemas\Structures\Mergeable;
 use Tatter\Schemas\Structures\Table;
 
+#[\AllowDynamicProperties]
 class FileHandler extends BaseReader implements ReaderInterface
 {
 

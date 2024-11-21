@@ -7,6 +7,7 @@ use CodeIgniter\Debug\Toolbar\Collectors\BaseCollector;
 /**
  * Schema collector
  */
+#[\AllowDynamicProperties]
 class Schema extends BaseCollector
 {
     /**

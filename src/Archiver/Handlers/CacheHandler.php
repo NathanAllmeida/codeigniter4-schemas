@@ -10,6 +10,7 @@ use Tatter\Schemas\Structures\Mergeable;
 use Tatter\Schemas\Structures\Schema;
 use Tatter\Schemas\Traits\CacheHandlerTrait;
 
+#[\AllowDynamicProperties]
 class CacheHandler extends BaseArchiver implements ArchiverInterface
 {
     use CacheHandlerTrait;

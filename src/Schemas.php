@@ -7,6 +7,7 @@ use Tatter\Schemas\Config\Schemas as SchemasConfig;
 use Tatter\Schemas\Exceptions\SchemasException;
 use Tatter\Schemas\Structures\Schema;
 
+#[\AllowDynamicProperties]
 class Schemas
 {
     /**

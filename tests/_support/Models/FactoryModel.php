@@ -4,6 +4,7 @@ namespace Tests\Support\Models;
 
 use CodeIgniter\Model;
 
+#[\AllowDynamicProperties]
 class FactoryModel extends Model
 {
     protected $table          = 'factories';

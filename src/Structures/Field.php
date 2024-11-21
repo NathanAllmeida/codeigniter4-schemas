@@ -2,6 +2,7 @@
 
 namespace Tatter\Schemas\Structures;
 
+#[\AllowDynamicProperties]
 class Field extends Mergeable
 {
     /**

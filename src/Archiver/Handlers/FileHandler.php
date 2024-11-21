@@ -8,6 +8,7 @@ use Tatter\Schemas\Config\Schemas as SchemasConfig;
 use Tatter\Schemas\Structures\Mergeable;
 use Tatter\Schemas\Structures\Schema;
 
+#[\AllowDynamicProperties]
 class FileHandler extends BaseArchiver implements ArchiverInterface
 {
 

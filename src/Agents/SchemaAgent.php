@@ -22,6 +22,7 @@ namespace Tatter\Schemas\Agents;
 use Config\Services;
 use Tatter\Agents\BaseAgent;
 
+#[\AllowDynamicProperties]
 class SchemaAgent extends BaseAgent
 {
     /**

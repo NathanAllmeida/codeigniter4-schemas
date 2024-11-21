@@ -6,6 +6,7 @@ use Config\Services as BaseService;
 use Tatter\Schemas\Config\Schemas as SchemasConfig;
 use Tatter\Schemas\Schemas;
 
+#[\AllowDynamicProperties]
 class Services extends BaseService
 {
     public static function schemas(?SchemasConfig $config = null, bool $getShared = true)

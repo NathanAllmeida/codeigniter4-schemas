@@ -12,6 +12,7 @@ namespace Config;
 *
 */
 
+#[\AllowDynamicProperties]
 class Schemas extends \Tatter\Schemas\Config\Schemas
 {
     // Whether to continue instead of throwing exceptions
